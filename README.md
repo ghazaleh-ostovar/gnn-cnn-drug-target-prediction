@@ -16,14 +16,11 @@ The raw dataset comes from:
 [🔹 Zhang et al. (2023) — *DrugAI: a multi-view deep learning model for predicting drug–target activating/inhibiting mechanisms*](https://doi.org/10.1093/bib/bbac526)
 
 
-🔹 **Class Distribution & Imbalance Handling**
-
-The dataset contains **11,229** drug–target interaction pairs, labeled as:
-
-- **Inhibition (0): 8,009 samples (~71%)**
-- **Activation (1): 3,220 samples (~29%)**
-
-To address this imbalance, we used the `pos_weight` parameter in the binary cross-entropy loss function (`BCEWithLogitsLoss`). The weight was calculated as the ratio of negative to positive samples (~2.33), helping the model pay more attention to the minority class (activations) during training.
+🔹 **Class Distribution**:  
+The raw dataset contains 11,229 drug–target pairs:  
+- **Inhibiting (0)**: 7,907  
+- **Activating (1)**: 3,322  
+To address this imbalance (~70/30), we used `pos_weight=2.33` in the `BCEWithLogitsLoss` function during training.
 
 - Raw and cleaned versions are located under the `Dataset/` directory.
 - Cleaned data was split into training and test sets and saved to:
