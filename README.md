@@ -36,6 +36,10 @@ To address this imbalance (~70/30), we used `pos_weight=2.33` in the `BCEWithLog
 | Protein Encoder  | ESM2 (frozen) followed by a 2-layer 1D CNN and adaptive max pooling     |
 | Fusion           | Concatenation → dropout → fully connected → sigmoid output              |
 
+Choice of model:
+
+CNNs are effective at capturing local patterns and short-range dependencies in protein sequences such as motifs that influence drug-target interactions. GNNs, on the other hand, excel at modeling molecular graphs, capturing the structural relationships between atoms in a drug compound. By combining both, this model integrates sequence-level and structure-level features, offering a more comprehensive representation for predicting activation or inhibition mechanisms.
+
 ## 🔹 Final Evaluation Metrics (Epoch 35, Threshold = 0.69)
 
 ### Per-Class Metrics
