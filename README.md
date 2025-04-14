@@ -13,7 +13,7 @@ The model is lightweight, interpretable, and modular—ideal for adapting to rel
 
 The raw dataset comes from:
 
-[🔹 Zhang et al. (2023) — *DrugAI: a multi-view deep learning model for predicting drug–target activating/inhibiting mechanisms*](https://doi.org/10.1093/bib/bbac526)
+[🔹 Source dataset paper (Zhang et al., 2023)](https://doi.org/10.1093/bib/bbac526)
 
 
 🔹 **Class Distribution**:  
