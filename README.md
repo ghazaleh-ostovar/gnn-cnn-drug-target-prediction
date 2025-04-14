@@ -89,7 +89,7 @@ Make sure the paths are correct; the default is `./Train_Test_Data`
 
 ## 🔹 Notes
 
-- ESM2 model (facebook/esm2_t6_8M_UR50D) was frozen during training
+- The ESM2 model (`facebook/esm2_t6_8M_UR50D`) was frozen during training to reduce computational overhead and speed up convergence.
 - Class imbalance handled using `pos_weight` in `BCEWithLogitsLoss`
 - Training metrics were logged and saved to CSV
 - Plots were generated to track training performance
