@@ -1,4 +1,4 @@
-# gnn-cnn-drug-target-prediction
+
 ## 🔹 HybridGNN-CNN: Predicting Drug–Target Activation & Inhibition
 
 This project implements a deep learning pipeline to classify drug–target interactions as activating or inhibiting. It combines structural and sequence-level biological information using:
