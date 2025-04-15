@@ -102,6 +102,5 @@ Make sure the paths are correct; the default is `./Train_Test_Data`
 ## 🔹 Contact
 
 **Ghazaleh Ostovar**  
-PhD in Physics | Machine Learning for Biology  
 [LinkedIn](https://www.linkedin.com/in/ghazaleh-ostovar) • [GitHub](https://github.com/ghazaleh-ostovar)
 
