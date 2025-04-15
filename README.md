@@ -15,13 +15,14 @@ The raw dataset comes from:
 
 [🔹 Source dataset paper (Zhang et al., 2023)](https://doi.org/10.1093/bib/bbac526) and made available via the authors’ [GitHub repository](https://github.com/cutezsq9503/DrugAI).  
 
-During preprocessing, I identified and resolved duplicate entries, including some with conflicting labels for the same drug–target pairs. Both the raw and cleaned datasets are available in the Dataset/ directory.
 
 🔹 **Class Distribution**:  
 The raw dataset contains 11,229 drug–target pairs:  
 - **Inhibiting (0)**: 7,907  
 - **Activating (1)**: 3,322  
 To address this imbalance (~70/30), we used `pos_weight=2.33` in the `BCEWithLogitsLoss` function during training.
+
+During preprocessing, I identified and resolved duplicate entries, including some with conflicting labels for the same drug–target pairs. 
 
 - Raw and cleaned versions are located under the `Dataset/` directory.
 - Cleaned data was split into training and test sets and saved to:
