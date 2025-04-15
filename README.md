@@ -1,7 +1,7 @@
 
 ## 🔹 HybridGNN-CNN: Predicting Drug–Target Activation & Inhibition
 
-This project implements a deep learning pipeline to classify drug–target interactions as activating or inhibiting. It combines structural and sequence-level biological information using:
+This project implements a GNN–CNN hybrid model from scratch using PyTorch and Hugging Face Transformers to predict drug–target interactions. It integrates structural and sequence-level biological information through:
 
 - Graph Neural Networks (GNNs) on drug molecular graphs (from SMILES)
 - Convolutional Neural Networks (CNNs) on protein embeddings (from ESM2)
@@ -13,8 +13,9 @@ The model is lightweight, interpretable, and modular, ideal for adapting to rela
 
 The raw dataset comes from:
 
-[🔹 Source dataset paper (Zhang et al., 2023)](https://doi.org/10.1093/bib/bbac526)
+[🔹 Source dataset paper (Zhang et al., 2023)](https://doi.org/10.1093/bib/bbac526) and made available via the authors’ [GitHub repository](https://github.com/cutezsq9503/DrugAI).  
 
+During preprocessing, I identified and resolved duplicate entries, including some with conflicting labels for the same drug–target pairs. Both the raw and cleaned datasets are available in the Dataset/ directory.
 
 🔹 **Class Distribution**:  
 The raw dataset contains 11,229 drug–target pairs:  
