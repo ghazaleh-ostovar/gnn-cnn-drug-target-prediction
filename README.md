@@ -38,7 +38,7 @@ During preprocessing, I identified and resolved duplicate entries, including som
 | Protein Encoder  | ESM2 (frozen) followed by a 2-layer 1D CNN and adaptive max pooling     |
 | Fusion           | Concatenation → dropout → fully connected → sigmoid output              |
 
-Choice of model:
+### Choice of model:
 
 CNNs are effective at capturing local patterns and short-range dependencies in protein sequences such as motifs that influence drug-target interactions. GNNs, on the other hand, excel at modeling molecular graphs, capturing the structural relationships between atoms in a drug compound. By combining both, this model integrates sequence-level and structure-level features, offering a more comprehensive representation for predicting activation or inhibition mechanisms.
 
