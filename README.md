@@ -7,7 +7,7 @@ This project implements a deep learning pipeline to classify drug–target inter
 - Convolutional Neural Networks (CNNs) on protein embeddings (from ESM2)
 - A fusion layer for binary classification
 
-The model is lightweight, interpretable, and modular—ideal for adapting to related bioinformatics tasks.
+The model is lightweight, interpretable, and modular, ideal for adapting to related bioinformatics tasks.
 
 ## 🔹 Dataset
 
